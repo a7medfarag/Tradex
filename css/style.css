@@ -1,0 +1,618 @@
+
+
+body{
+    counter-reset:mycounter 8000;
+}
+.custom-arrow{
+    font-size:30px;
+    bottom:0;
+    /*top:0;*/
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    z-index:30;
+    right:50px;
+}
+:root {
+    --color-primary: #0c65ed;
+    --color-secondary: #666666;
+    --bg-color-primary: #0c65ed;
+    --bg-color-secondary: #f9f9f9;
+    --color-black: black;
+    --color-white: rgb(255, 255, 255);
+    --shadow-black: 0 16px 26px -10px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+nav .nav-item > a {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header_active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/*------------------------------------*\
+  $Dropdown Style 
+\*------------------------------------*/
+
+.dropdown-menu {
+    border: none;
+    border-top: 3px solid var(--bg-color-primary);
+    border-radius: 0 0 0.25rem 0.25rem;
+    background-color: var(--color-white);
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: 0.4s all;
+    box-shadow: var(--shadow-black);
+}
+
+    .dropdown-menu.show {
+        opacity: 1;
+        transform: translateX(0);
+        transition: 0.4s all;
+    }
+
+.dropdown:hover .down_animate {
+    vertical-align: baseline !important;
+}
+
+.dropdown:hover a.nav-link,
+.dropdown-item:hover,
+.dropdown-item:hover > a {
+    color: var(--color-primary);
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.nxt_drop {
+    top: -5px;
+    left: -95%;
+}
+.custom-icons{
+    padding:5px;
+}
+.custom-nav {
+    z-index: 35;
+}
+.overlay {
+    top: 0;
+    left: 0;
+    background-color: #141414c9;
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators li{
+    height:10px;
+    width:10px;
+    color:transparent;
+    margin:5px;
+}
+
+.carousel-indicators li:hover{
+    width:20px;
+    height:20px;
+}
+.slide-btn {
+    width: 300px;
+    height: 40px;
+    border:2px solid white;
+    border-radius: 20px;
+    text-decoration:none;
+    margin:20px;
+    padding:10px;
+    color:white;
+}
+    .slide-btn:hover {
+        background-color: #007bff;
+    }
+.custom-list-style{
+    left:auto;
+    right:35px;
+    bottom:0;
+    display:block;
+    top:300px;
+}
+.list-style{
+    list-style-type:none;
+}
+.img-style{
+    width:100%;
+    height:500px;
+}
+.carousel-item img{
+    height:500px;
+}
+.title-about{
+    text-transform:capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:40px;
+    margin:50px 0;
+    text-align:center;
+    position:relative;
+    padding:0;
+}
+    .title-about::after {
+        width: 70px;
+        height: 2px;
+        background-color: #0c65ed;
+        right: 350px;
+        top: 21px;
+        position: absolute;
+        content: "";
+    }
+    .title-about span::after {
+        width: 40px;
+        height: 2px;
+        background-color: #0c65ed;
+        right: 380px;
+        top: 15px;
+        position: absolute;
+        content: "";
+    }
+    .title-about::before {
+        width: 70px;
+        height: 2px;
+        background-color: #0c65ed;
+        left: 350px;
+        top: 21px;
+        position: absolute;
+        content: "";
+    }
+    .title-about span::before {
+        width: 40px;
+        height: 2px;
+        background-color: #0c65ed;
+        left: 380px;
+        top: 15px;
+        position: absolute;
+        content: "";
+    }
+#title-dublicate{
+    /*position:absolute;*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:grey;
+        text-transform:capitalize;
+        text-align:center;
+        /*right:600px;*/
+}
+
+ .data{
+     font-size:18px;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-left:5px;
+ }
+.img-hover:hover{
+    color:blue;
+}
+.img-hover:hover p{
+    color:grey;
+}
+.btn-custom {
+    transition: all .3s ease;
+    position:relative;
+    overflow:hidden;
+    z-index:0;
+}
+
+.custom-list{
+    margin-top:30px;
+    list-style-type:none;
+    display:inline-block;
+}
+.custom-list ul li i{
+    width:50px;
+}
+.our-service {
+    width: 100%;
+    height: 900px;
+    background-image: url(../images/service-bg.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.white-box {
+    max-width: 340px;
+    top: 29%;
+    /*right: 500px;*/
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+    z-index:15;
+    background-color:white;
+    height:70%;
+    bottom:0;
+}
+.box-custom-icon {
+    font-size: 30px;
+}
+.custom-icon {
+    font-size: 40px;
+    box-shadow: 0px 0px 60px 17px rgba(0, 0, 0, 0.2);
+    height:75px;
+}
+.counter {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.card{
+    width:100%;
+    height:250px;
+    overflow:hidden;
+}
+
+.card-icon {
+    font-size: 40px;
+    text-align: center;
+    padding-top:70px;
+}
+    .card-icon h5{
+        font-size:30px;
+    }
+    .card-body {
+        bottom: -500px;
+        width: 100%;
+        height: 100%;
+        transition:all 0.50s;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+.div-hover:hover .card-body {
+    
+    bottom: 0;
+}
+.gallery-title {
+    font-size: 36px;
+    color: #3F6184;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.filter-button {
+    font-size: 18px;
+    border: 2px solid #3F6184;
+    padding: 5px 10px;
+    text-align: center;
+    color: #3F6184;
+    margin-bottom: 30px;
+    background: transparent;
+}
+
+    .filter-button:hover,
+    .filter-button:focus,
+    .filter-button.active {
+        color: #ffffff;
+        background-color: #3F6184;
+        outline: none;
+    }
+
+.gallery_product {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+    .gallery_product .img-info {
+        position: absolute;
+        background: rgba(0,0,0,0.5);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /*padding: 20px;*/
+        overflow: hidden;
+        color: #fff;
+        top: 0;
+        display: none;
+        -webkit-transition: 2s;
+        transition: all 2s;
+    }
+
+    .gallery_product:hover .img-info {
+        display: flex;
+        -webkit-transition: 2s;
+        transition: 2s;
+    }
+    /*	end gallery */
+
+.title-creative {
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin: 50px 0;
+    text-align: center;
+    position: relative;
+    padding: 0;
+}
+
+    .title-creative::after {
+        width: 70px;
+        height: 2px;
+        background-color: #0c65ed;
+        right: 260px;
+        top: 21px;
+        position: absolute;
+        content: "";
+    }
+
+    .title-creative span::after {
+        width: 40px;
+        height: 2px;
+        background-color: #0c65ed;
+        right: 290px;
+        top: 15px;
+        position: absolute;
+        content: "";
+    }
+
+    .title-creative::before {
+        width: 70px;
+        height: 2px;
+        background-color: #0c65ed;
+        left: 260px;
+        top: 21px;
+        position: absolute;
+        content: "";
+    }
+
+    .title-creative span::before {
+        width: 40px;
+        height: 2px;
+        background-color: #0c65ed;
+        left: 290px;
+        top: 15px;
+        position: absolute;
+        content: "";
+    }
+
+.creative-image .card-body {
+  bottom:-120px;
+  height:55%;
+  
+}
+.creative-image .div-hover {
+    height: 400px;
+    border:none;
+}
+
+.div-hover img {
+    margin-left: 70px;
+}
+.Testimonial {
+    width: 100%;
+    height: 500px;
+   
+}
+
+.custom-subscribe {
+    font-size:50px;
+    margin:60px 5px;
+}
+.custom-font{
+    font-size:30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.custom-form{
+    margin:60px 0px;
+}
+button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background-color: #007bff;
+    border: none;
+    padding: 0px !important;
+    font: inherit;
+    font-size: 49px;
+    color: white;
+    margin: 5px;
+    width: 100px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    outline:none;
+}
+button.owl-next, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+    background-color: #007bff;
+    border: none;
+    padding: 0px !important;
+    font: inherit;
+    font-size: 49px;
+    color: white;
+    margin: 5px;
+    width: 100px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    outline: none;
+}
+.our-pricing{
+    width:100%;
+    height:1100px;
+    margin-bottom:40px;
+}
+.boxing-shadow {
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+    z-index:15;
+}
+.edit-card {
+    height: 650px;
+}
+.custom-price {
+    visibility:hidden;
+}
+.blog1 {
+    margin-top: 30px;
+}
+
+    .blog1 .blog-photo {
+        overflow: hidden;
+        height: 250px;
+        width: 100%;
+        transition: all .25s linear;
+    }
+
+.blog .blog-icon {
+    background-color: #1a1a1a;
+    padding: 5px;
+    border-bottom-left-radius: 4px;
+}
+
+    .blog .blog-icon a {
+        color: white;
+        margin-top: 15px;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+        .blog .blog-icon a:hover {
+            color: lightskyblue;
+        }
+
+.blog .card-content h6 {
+    margin-right: 55px;
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+
+    .blog .card-content h6 a {
+        color: #1a1a1a;
+        text-decoration: none;
+    }
+
+    .blog .card-content h6 .first-link:hover {
+        color: #0c65ed;
+    }
+
+.blog .card-content .blog-links {
+    color: #858585;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+    .blog .card-content .blog-links span {
+        margin-right: 8px;
+    }
+
+    .blog .card-content .blog-links .span-two {
+        margin-left: 25px;
+    }
+
+.blog .card-content hr {
+    width: 92%;
+    margin-right: 48px;
+    height: 2px;
+}
+
+.blog .card-content .blog-links .span-two::after {
+    content: "";
+    position: absolute;
+    background-color: #0c65ed;
+    height: 2px;
+    height: 2px;
+    left: -132px;
+    top: 35px;
+    width: 92px;
+    transition: all .25s linear;
+}
+
+.blog .card-content .end-link {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.end-link .span-three {
+    margin-left: 17px;
+}
+
+.card-content {
+    padding-bottom: 10px;
+}
+
+.blog .custem-blog-row {
+    margin-left: 0px;
+}
+
+.blog1:hover .blog-photo img {
+    transition: all .25s linear;
+    transform: rotate(-2deg) scale(1.1,1.1);
+    overflow: hidden;
+}
+
+.blog1:hover .blog-icon {
+    background-color: #0c65ed;
+}
+
+.blog1:hover .span-two::after {
+    width: 2300% !important;
+    overflow: hidden;
+}
+.meet-client{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:40px;
+}
+.meet-client::after {
+    width: 70px;
+    height: 2px;
+    background-color: #0c65ed;
+    right: 220px;
+    top: 21px;
+    position: absolute;
+    content: "";
+}
+
+.meet-client span::after {
+    width: 40px;
+    height: 2px;
+    background-color: #0c65ed;
+    right: 250px;
+    top: 15px;
+    position: absolute;
+    content: "";
+}
+
+.purchase{
+    width:100%;
+    height:100px;
+}
+.positiond-icon{
+    margin:auto;
+    font-size:80px;
+}
+.custom-text{
+    top:30px;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index:15;
+}
+.purchase-link{
+    margin-left:20rem;
+    margin-top:1.5rem;
+}
+.validation-form{
+    width:100%;
+    margin-top:25%;
+}
+
+.validation-input {
+    border-bottom: 1px solid lightgray;
+    border-top:0;
+    border-right:0;
+    border-left:0;
+        outline:0;
+}
+.contact-info {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom:1px solid #0c65ed;
+    font-size:30px;
+    margin-top:10px;
+}
+.img-width{
+    width:50px;
+    height:50px;
+}
+.font-family{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

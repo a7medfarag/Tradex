@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.5.1.slim.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container bg-light">
+            <div class="row">
+
+                <form class="form validation-form form-group" name="vform" onsubmit="return Validate()" method="post" action="index.html">
+                    <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-between">
+                        <div id="nama-key" class="col-lg-4 col-md-12 col-sm-12 ">
+                            <input type="text" class="form-control validation-input mb-3" name="nama" placeholder="input your name">
+                            <div id="name_error" class="text_error"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <input type="text" class="form-control validation-input mb-3" name="email" placeholder="input your email">
+                            <div id="email_error" class="text_error"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <input type="text" class="form-control validation-input mb-3" name="subject" placeholder="Subject">
+                            <div id="email_error" class="text_error"></div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <textarea rows="10" cols="50" placeholder="Message" class="validation-input" ></textarea>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <!--<input type="submit" class="btn btn-primary" value="REGISTER" onclick="index.html">-->
+                        <button type="submit" class="btn btn-primary" onclick="index.html">Register</button>
+                    </div>
+                </form>
+               
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/form-Validation.js">
+        
+    </script>
+</body>
+</html>
